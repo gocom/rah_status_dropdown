@@ -20,6 +20,10 @@ p. The general simple behavior stands: paste plugin code to the plugin installer
 
 h2. Changelog
 
+h3. Version 0.5 - upcoming
+
+* Now uses core's @script_js()@ for outputing JavaScript.
+
 h3. Version 0.4 - 2011/08/06
 
 * Now the plugin doesn't use PHP tie-in, and the all the action is powered by JavaScript.

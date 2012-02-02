@@ -26,26 +26,24 @@
 		if($event != 'article')
 			return;
 
-		echo <<<EOF
-			<script type="text/javascript">
-				<!--
-				$(document).ready(function() {
-					$('#write-status').append('<select id="rah_status_dropdown" name="Status" class="list"></select>');
-					var to = $('#rah_status_dropdown');
-					$('#write-status li').each(
-						function() {
-							var input = $(this).children('input[type=radio]');
-							to.append(
-								'<option value="'+input.val()+'"'+
-									(input.is(':checked') ? ' selected="selected"' : '' )+
-								'>' + $(this).children('label').text()+'</option>'
-							);
-						}
-					);
-					$('#write-status ul').remove();
-				});
-				-->
-			</script>
+		$js = <<<EOF
+			$(document).ready(function() {
+				$('#write-status').append('<select id="rah_status_dropdown" name="Status" class="list"></select>');
+				var to = $('#rah_status_dropdown');
+				$('#write-status li').each(
+					function() {
+						var input = $(this).children('input[type=radio]');
+						to.append(
+							'<option value="'+input.val()+'"'+
+								(input.is(':checked') ? ' selected="selected"' : '' )+
+							'>' + $(this).children('label').text()+'</option>'
+						);
+					}
+				);
+				$('#write-status ul').remove();
+			});
 EOF;
+
+		echo script_js($js);
 	}
 ?>
