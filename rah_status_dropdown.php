@@ -1,29 +1,27 @@
-<?php	##################
-	#
-	#	rah_status_dropdown-plugin for Textpattern
-	#	version 0.4
-	#	by Jukka Svahn
-	#	http://rahforum.biz
-	#
-	#	Copyright (C) 2011 Jukka Svahn <http://rahforum.biz>
-	#	Licensed under GNU Genral Public License version 2
-	#	http://www.gnu.org/licenses/gpl-2.0.html
-	#
-	###################
-
-	if(@txpinterface == 'admin')
-		register_callback('rah_status_dropdown','admin_side','head_end');
+<?php
 
 /**
-	Changes the radio buttons into dropdown
-*/
+ * Rah_status_dropdown plugin for Textpattern CMS
+ *
+ * @author Jukka Svahn
+ * @date 2008-
+ * @license GNU GPLv2
+ * @link http://rahforum.biz/plugins/rah_status_dropdown
+ *
+ * Copyright (C) 2012 Jukka Svahn <http://rahforum.biz>
+ * Licensed under GNU Genral Public License version 2
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+	if(@txpinterface == 'admin')
+		register_callback('rah_status_dropdown', 'admin_side', 'head_end');
+
+/**
+ * Adds JavaScript to the <head>
+ */
 
 	function rah_status_dropdown() {
 		global $event;
-
-		/*
-			If not Write panel, end here
-		*/
 
 		if($event != 'article')
 			return;
