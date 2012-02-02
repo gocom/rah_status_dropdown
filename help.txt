@@ -1,9 +1,9 @@
 h1. rah_status_dropdown
 
-p. Changes Textpattern's Write-tab's article Status radio buttons into a select field. That way it saves extra space, making the status selecting tighter, plus hides article statuses that have no real difference; Those statuses might confuse writer.
+p. Rah_status_dropdown is a visual admin-side extension for "Textpattern CMS":http://www.textpattern.com. The plugin changes _Write_ panel's _Status_ radio buttons into a select field. Changing the list of statuses into a select field will save extra space, and hides the extra article statuses that might have no real use to the writer.
 
-* Version: 0.1
-* Updated: 2008/08/31 2:20 PM GMT+2
+* Version: 0.2
+* Updated: 2010/08/08 2:30 AM UTC
 
 h3. Table of Contents
 
@@ -20,20 +20,24 @@ h3(#list-of-features). List of features
 
 h3(#requirements). Requirements
 
-p. Minimum requirements:
+p. Rah_status_dropdown's minimum requirements:
 
-* Textpattern 4.0.4+
-* Textpattern with jQuery
-
-p. Recommended:
-
-* Textpattern 4.0.6+
+* Textpattern 4.0.7+
+* Textpattern with jQuery (included with Textpattern).
+* Client browser with JavaScript support.
 
 h3(#installation-and-usage). Installation and usage
 
 p. The general simple behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup.
 
 h3(#changelog). Changelog
+
+p. *Version 0.2*
+
+* Moved the JavaScript to @<head>@.
+* Now gets the active status with plain JavaScript, not with PHP from the saved article.
+* Because of the above change, the code is now shorter and less intensive.
+* Now requires Textpattern version 4.0.7 or newer.
 
 p. *Version 0.1*
 
