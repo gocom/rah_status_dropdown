@@ -1,9 +1,13 @@
 <?php	##################
 	#
 	#	rah_status_dropdown-plugin for Textpattern
-	#	version 0.2
+	#	version 0.3
 	#	by Jukka Svahn
 	#	http://rahforum.biz
+	#
+	#	Copyright (C) 2011 Jukka Svahn <http://rahforum.biz>
+	#	Licensed under GNU Genral Public License version 2
+	#	http://www.gnu.org/licenses/gpl-2.0.html
 	#
 	###################
 
@@ -40,6 +44,7 @@ EOF;
 
 		echo <<<EOF
 			<script type="text/javascript">
+				<!--
 				$(document).ready(function() {
 					var valPageLoad = $('#write-status input:checked').val();
 					var list = '<select name="Status" class="list">';
@@ -48,6 +53,8 @@ EOF;
 					$("#write-status").append(list);
 					$("#write-status ul").remove();
 				});
+				-->
 			</script>
 EOF;
 	}
+?>
