@@ -1,7 +1,7 @@
 <?php	##################
 	#
 	#	rah_status_dropdown-plugin for Textpattern
-	#	version 0.3
+	#	version 0.4
 	#	by Jukka Svahn
 	#	http://rahforum.biz
 	#
@@ -28,30 +28,23 @@
 		if($event != 'article')
 			return;
 
-		global $statuses;
-		$js = array();
-
-		foreach($statuses as $value => $name)
-			$js[] = <<<EOF
-
-					if(valPageLoad == "{$value}")
-						list += '<option value="{$value}" selected="selected">{$name}</option>';
-					else
-						list += '<option value="{$value}">{$name}</option>';
-EOF;
-
-		$js = implode('',$js);
-
 		echo <<<EOF
 			<script type="text/javascript">
 				<!--
 				$(document).ready(function() {
-					var valPageLoad = $('#write-status input:checked').val();
-					var list = '<select name="Status" class="list">';
-					{$js}
-					list += '</select>';
-					$("#write-status").append(list);
-					$("#write-status ul").remove();
+					$('#write-status').append('<select id="rah_status_dropdown" name="Status" class="list"></select>');
+					var to = $('#rah_status_dropdown');
+					$('#write-status li').each(
+						function() {
+							var input = $(this).children('input[type=radio]');
+							to.append(
+								'<option value="'+input.val()+'"'+
+									(input.is(':checked') ? ' selected="selected"' : '' )+
+								'>' + $(this).children('label').text()+'</option>'
+							);
+						}
+					);
+					$('#write-status ul').remove();
 				});
 				-->
 			</script>
