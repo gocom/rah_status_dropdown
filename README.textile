@@ -22,7 +22,7 @@ h2. Changelog
 
 h3. Version 0.5 - upcoming
 
-* Now uses core's @script_js()@ for outputing JavaScript.
+* Now uses core's @script_js()@ for outputting JavaScript.
 
 h3. Version 0.4 - 2011/08/06
 
