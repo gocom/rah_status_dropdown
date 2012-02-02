@@ -1,52 +1,40 @@
 h1. rah_status_dropdown
 
-p. Rah_status_dropdown is a visual admin-side extension for "Textpattern CMS":http://www.textpattern.com. The plugin changes _Write_ panel's _Status_ radio buttons into a select field. Changing the list of statuses into a select field will save extra space, and hides the extra article statuses that might have no real use to the writer.
+p. Rah_status_dropdown is a visual admin-side extension for "Textpattern CMS":http://www.textpattern.com. The plugin changes _Write_ panel's _Status_ radio buttons to a select field. Changing the list of statuses to a select field will save some space, and hides the extra article statuses that might have no real use to the content author.
 
-* Version: 0.4
-* Updated: 2011/08/06 4:30 PM UTC
-
-h3. Table of Contents
-
-* "List of features":#list-of-features
-* "Requirements":#requirements
-* "Installation and usage":#installation-and-usage
-* "Changelog":#changelog
-
-h3(#list-of-features). List of features
+h2. List of features
 
 * Simple setup: just run the automatic plugin setup and activate.
 * Shows a status select dropdown box instead radio buttons.
-* Outputs valid XHTML, and tiny and clean JavaScript code.
+* Generates valid HTML and tidy JavaScript code.
 
-h3(#requirements). Requirements
+h2. Requirements
 
 p. Rah_status_dropdown's minimum requirements:
 
-* Textpattern 4.0.7+
-* Textpattern with jQuery (included with Textpattern).
-* Client browser with JavaScript support.
+* Textpattern v4.0.7 or newer.
 
-h3(#installation-and-usage). Installation and usage
+h2. Installation and usage
 
 p. The general simple behavior stands: paste plugin code to the plugin installer textarea and run the automatic setup.
 
-h3(#changelog). Changelog
+h2. Changelog
 
-p. *Version 0.4*
+h3. Version 0.4 - 2011/08/06
 
 * Now the plugin doesn't use PHP tie-in, and the all the action is powered by JavaScript.
 
-p. *Version 0.3*
+h3. Version 0.3 - 2011/06/29
 
 * Fixed: Don't spit out JavaScript when the browser's JavaScript support is disabled.
 
-p. *Version 0.2*
+h3. Version 0.2 - 2010/08/08
 
 * Moved the JavaScript to @<head>@.
 * Now gets the active status with plain JavaScript, not with PHP from the saved article.
 * Because of the above change, the code is now shorter and less intensive.
 * Now requires Textpattern version 4.0.7 or newer.
 
-p. *Version 0.1*
+h3. Version 0.1 - 2008/08/31
 
 * Initial release.
