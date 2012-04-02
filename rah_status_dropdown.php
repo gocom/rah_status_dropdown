@@ -19,9 +19,13 @@
 
 /**
  * Replace status radios with a drop down
+ * @param string $event
+ * @param string $step
+ * @param string $default
+ * @param array $rs
  */
 
-	function rah_status_dropdown($event, $step, $pre, $rs) {
+	function rah_status_dropdown($event, $step, $default, $rs) {
 		global $statuses;
 		
 		return 
