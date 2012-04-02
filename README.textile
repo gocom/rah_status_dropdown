@@ -6,13 +6,12 @@ h2. List of features
 
 * Simple setup: just run the automatic plugin setup and activate.
 * Shows a status select dropdown box instead radio buttons.
-* Generates valid HTML and tidy JavaScript code.
 
 h2. Requirements
 
 p. Rah_status_dropdown's minimum requirements:
 
-* Textpattern v4.0.7 or newer.
+* Textpattern v4.2.0 or newer.
 
 h2. Installation and usage
 
@@ -22,8 +21,9 @@ h2. Changelog
 
 h3. Version 0.5 - upcoming
 
+* Textpattern 4.5.0 (r3650 and newer) compatibility.
 * Added: select field is wrapped in paragraph.
-* Now uses core's @script_js()@ for outputting JavaScript.
+* Changed: Uses pluggable_ui and server-side PHP instead of JavaScript.
 
 h3. Version 0.4 - 2011/08/06
 
