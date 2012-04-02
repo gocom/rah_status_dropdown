@@ -22,6 +22,7 @@ h2. Changelog
 
 h3. Version 0.5 - upcoming
 
+* Added: select field is wrapped in paragraph.
 * Now uses core's @script_js()@ for outputting JavaScript.
 
 h3. Version 0.4 - 2011/08/06

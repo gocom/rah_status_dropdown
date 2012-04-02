@@ -28,7 +28,7 @@
 
 		$js = <<<EOF
 			$(document).ready(function() {
-				$('#write-status').append('<select id="rah_status_dropdown" name="Status" class="list"></select>');
+				$('#write-status').append('<p class="status rah_status_dropdown"><select id="rah_status_dropdown" name="Status" class="list"></select></p>');
 				var to = $('#rah_status_dropdown');
 				$('#write-status li').each(
 					function() {
