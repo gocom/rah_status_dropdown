@@ -29,9 +29,10 @@
 		global $statuses;
 		
 		return 
-			'<fieldset id="write-status">'.n.
-				'<legend>'.gTxt('status').'</legend>'.n.
-				graf(selectInput('Status', doArray($statuses, 'strip_tags'), !$rs['Status'] ? 4 : $rs['Status'])).
-			'</fieldset>'.n;
+			preg_replace(
+				'/<ul[^>]*?>[\s\S]*?<\/ul>/',
+				graf(selectInput('Status', doArray($statuses, 'strip_tags'), !$rs['Status'] ? 4 : $rs['Status'])),
+				$default
+			);
 	}
 ?>
