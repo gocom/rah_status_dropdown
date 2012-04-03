@@ -31,7 +31,7 @@
 		return 
 			preg_replace(
 				'/<ul[^>]*?>[\s\S]*?<\/ul>/',
-				graf(selectInput('Status', doArray($statuses, 'strip_tags'), !$rs['Status'] ? 4 : $rs['Status'])),
+				graf(selectInput('Status', doArray($statuses, 'strip_tags'), !$rs['Status'] ? 4 : $rs['Status']), ' class="status"'),
 				$default
 			);
 	}
