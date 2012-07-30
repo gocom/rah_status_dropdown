@@ -1,7 +1,7 @@
 <manifest>
 
 	<name>rah_status_dropdown</name>
-	<description>Compresses Write-panel's status radio buttons to a select field</description>
+	<description>Changes Write panel's status radio buttons to a select field</description>
 	
 	<version>0.4</version>
 	<type>3</type>
