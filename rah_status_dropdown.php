@@ -23,6 +23,7 @@
  * @param string $step
  * @param string $default
  * @param array $rs
+ * @return string HTML
  */
 
 	function rah_status_dropdown($event, $step, $default, $rs) {
