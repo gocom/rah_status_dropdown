@@ -8,7 +8,7 @@ h2. Requirements
 
 p. Rah_status_dropdown's minimum requirements:
 
-* Textpattern v4.2.0 or newer.
+* Textpattern v4.5.0 or newer.
 
 h2. Installing
 
