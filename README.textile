@@ -21,6 +21,12 @@ p. The plugin is now in use and the article status show up as a select field.
 
 h2. Changelog
 
+h3. Version 0.6 - upcoming
+
+* Changed plugin type to 4, which allows the plugin to load correctly on Textpattern v4.5.0.
+* Dropped support for Textpattern v4.4.1 and older.
+* Is now fully compatible with Textpattern v4.5.0 release version.
+
 h3. Version 0.5 - 2012/07/30
 
 * Added: The select field is now wrapped in a paragraph.
