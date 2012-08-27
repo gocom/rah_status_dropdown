@@ -13,9 +13,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-	if(@txpinterface == 'admin') {
-		register_callback('rah_status_dropdown', 'article_ui', 'status');
-	}
+	register_callback('rah_status_dropdown', 'article_ui', 'status');
 
 /**
  * Replace status radios with a drop down
