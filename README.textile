@@ -26,7 +26,7 @@ h2. Changelog
 h3. Version 0.6 - upcoming
 
 * Changed plugin type to 4, which allows the plugin to load correctly on Textpattern v4.5.0.
-* Dropped support for Textpattern v4.4.1 and older.
+* Now requires Textpattern 4.5.0 or newer.
 * Is now fully compatible with Textpattern v4.5.0 release version.
 
 h3. Version 0.5 - 2012/07/30
