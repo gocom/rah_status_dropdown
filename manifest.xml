@@ -3,7 +3,7 @@
 	<name>rah_status_dropdown</name>
 	<description>Changes Write panel's status radio buttons to a select field</description>
 	
-	<version>0.6.1</version>
+	<version>0.6.2</version>
 	<type>4</type>
 	
 	<author>Jukka Svahn</author>
