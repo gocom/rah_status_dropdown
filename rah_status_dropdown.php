@@ -25,9 +25,10 @@
  * @return string HTML
  */
 
-	function rah_status_dropdown($event, $step, $default, $rs) {
+	function rah_status_dropdown($event, $step, $default, $rs)
+	{
 		global $statuses;
-		
+
 		return 
 			preg_replace(
 				'/<ul[^>]*?>[\s\S]*?<\/ul>/',
