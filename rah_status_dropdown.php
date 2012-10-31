@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Rah_status_dropdown plugin for Textpattern CMS
+ * Rah_status_dropdown plugin for Textpattern CMS.
  *
- * @author Jukka Svahn
- * @date 2008-
+ * @author  Jukka Svahn
+ * @date    2008-
  * @license GNU GPLv2
- * @link http://rahforum.biz/plugins/rah_status_dropdown
+ * @link    http://rahforum.biz/plugins/rah_status_dropdown
  *
  * Copyright (C) 2012 Jukka Svahn <http://rahforum.biz>
  * Licensed under GNU Genral Public License version 2
@@ -16,11 +16,12 @@
 	register_callback('rah_status_dropdown', 'article_ui', 'status');
 
 /**
- * Replace status radios with a drop down
- * @param string $event
- * @param string $step
- * @param string $default
- * @param array $rs
+ * Replaces status radio buttons with a &lt;select&gt; input.
+ *
+ * @param  string $event
+ * @param  string $step
+ * @param  string $default
+ * @param  array  $rs
  * @return string HTML
  */
 
