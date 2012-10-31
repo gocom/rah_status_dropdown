@@ -23,7 +23,7 @@ p. The plugin is now in use and the article status show up as a select field.
 
 h2. Changelog
 
-h3. Version 0.6.1 - upcoming
+h3. Version 0.6.1 - 2012/10/31
 
 * Aids Textpattern bug present 4.5.2 affecting all select inputs. The plugin now casts statuses as strings. This bug makes statuses appear as zeros in the list. This is due to 4.5.2 casting all option labels to the default values variable type which for the article status is an integer.
 
